@@ -2,9 +2,6 @@
 // Created by Willow Zuvich on 9/8/23.
 //
 
-#ifndef MA1_QUEUE_H
-#define MA1_QUEUE_H
-
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -111,5 +108,3 @@ bool queue::isFull()
 {
     return (size()-1 == capacity);
 }
-
-#endif //MA1_QUEUE_H

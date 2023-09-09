@@ -1,4 +1,4 @@
-# Install script for directory: /Users/willowzuvich/Desktop/CPTS 223/MA1
+# Install script for directory: /Users/willowzuvich/Desktop/CPTS 223/CPTS223_Assignments
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/willowzuvich/Desktop/CPTS 223/MA1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/willowzuvich/Desktop/CPTS 223/CPTS223_Assignments/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
