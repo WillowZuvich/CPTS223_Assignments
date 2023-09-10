@@ -2,6 +2,9 @@
 // Created by Willow Zuvich on 9/8/23.
 //
 
+#ifndef MA1_QUEUE_H
+#define MA1_QUEUE_H
+
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -31,7 +34,7 @@ public:
 };
 
 // Constructor to initialize queue
-queue::queue(int size)
+inline queue::queue(int size)
 {
     arr = new int[size];
     capacity = size;
@@ -41,14 +44,14 @@ queue::queue(int size)
 }
 
 // Destructor to free memory allocated to the queue
-queue::~queue()
+inline queue::~queue()
 {
-    delete arr; // you are not required to test this function;
-    // however, are there issues with it?
+    delete[] arr; // you are not required to test this function;
+    // however, are there issues with it? - yes, square brackets added
 }
 
 // Utility function to remove front element from the queue
-void queue::dequeue()
+inline void queue::dequeue()
 {
     // check for queue underflow
     if (isEmpty())
@@ -64,7 +67,7 @@ void queue::dequeue()
 }
 
 // Utility function to add an item to the queue
-void queue::enqueue(int item)
+inline void queue::enqueue(int item)
 {
     // check for queue overflow
     if (isFull())
@@ -76,35 +79,37 @@ void queue::enqueue(int item)
     cout << "Inserting " << item << '\n';
 
     rear = (rear + 1) % capacity;
-    arr[rear] = size();
+    arr[rear] = item;
     count++;
 }
 
 // Utility function to return front element in the queue
-int queue::peek()
+inline int queue::peek()
 {
     if (isEmpty())
     {
         cout << "UnderFlow\nProgram Terminated\n";
         return numeric_limits<int>::min();
     }
-    return arr[rear];
+    return arr[front];
 }
 
 // Utility function to return the size of the queue
-int queue::size()
+inline int queue::size()
 {
-    return count + 1;
+    return count;
 }
 
 // Utility function to check if the queue is empty or not
-bool queue::isEmpty()
+inline bool queue::isEmpty()
 {
     return (size() == 0);
 }
 
 // Utility function to check if the queue is full or not
-bool queue::isFull()
+inline bool queue::isFull()
 {
-    return (size()-1 == capacity);
+    return (size() == capacity);
 }
+
+#endif

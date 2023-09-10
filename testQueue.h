@@ -6,13 +6,20 @@
 
 #include "queue.h"
 
+void testSize();
 
-/* Test ID: Queue Size Check - QSC
- * Unit: queue::size()
- * Description: test to determine if queue::size()
- * returns 0 if the queue object contains 0 items
- *
- *
- *
- *
- * */
+void testIsEmpty();
+
+void testIsFull();
+
+void testDequeueEmpty();
+
+void testDequeue();
+
+void testEnqueue();
+
+void testEnqueueFull();
+
+void testPeekEmpty();
+
+void testPeek();
