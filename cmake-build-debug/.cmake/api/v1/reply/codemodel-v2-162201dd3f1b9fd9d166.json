@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CPTS223_Assignments_PA2",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CPTS223_Assignments_PA2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CPTS223_Assignments_PA2-Debug-db2c52b7d8f6288f60cc.json",
+					"name" : "CPTS223_Assignments_PA2",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/willowzuvich/Desktop/CPTS 223/CPTS223_Assignments/cmake-build-debug",
+		"source" : "/Users/willowzuvich/Desktop/CPTS 223/CPTS223_Assignments/cmake-build-debug"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
