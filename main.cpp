@@ -24,7 +24,7 @@ int main()
     srand ((unsigned int)time(NULL));
 
     Game G1;
-    G1.Play();
+    G1.play();
 
     return 0;
 }
