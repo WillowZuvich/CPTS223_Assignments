@@ -1,0 +1,3 @@
+/Users/willowzuvich/desktop/CPTS 223/MA3/my_build/CMakeFiles/CPTS_223_MA3-executable.dir
+/Users/willowzuvich/desktop/CPTS 223/MA3/my_build/CMakeFiles/edit_cache.dir
+/Users/willowzuvich/desktop/CPTS 223/MA3/my_build/CMakeFiles/rebuild_cache.dir
