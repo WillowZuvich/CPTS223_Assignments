@@ -81,6 +81,21 @@ void cal_max() {
     
     // your code goes here
 
+    omp_set_num_threads(num_threads);
+#pragma omp parallel
+    {
+        // Getting thread number
+        int tid = omp_get_thread_num();
+        int i = tid*workload;
+        int local_max = data[i];
+        for (; i < (tid + 1)*workload; ++i) {
+            if (data[i] > local_max)
+                local_max = data[i];
+        }
+        if(local_max > max)
+            max = local_max;
+    }
+
     // OpenMP implementation: stop here
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
     std::cout << "Elapsed time = " << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count()
