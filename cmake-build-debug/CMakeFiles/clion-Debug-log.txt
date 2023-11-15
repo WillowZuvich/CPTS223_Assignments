@@ -1,0 +1,7 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S "/Users/willowzuvich/Desktop/CPTS 223/CPTS223_Assignments" -B "/Users/willowzuvich/Desktop/CPTS 223/CPTS223_Assignments/cmake-build-debug"
+-- Found OpenMP_C: -Xpreprocessor -fopenmp  
+-- Found OpenMP_CXX: -Xpreprocessor -fopenmp (found version "5.0") 
+-- Found OpenMP: TRUE (found version "5.0")  
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/willowzuvich/Desktop/CPTS 223/CPTS223_Assignments/cmake-build-debug
