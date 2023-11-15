@@ -636,3 +636,74 @@ events:
         
       exitCode: 2
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:33 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles/CMakeScratch/TryCompile-sl9WUL"
+      binary: "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles/CMakeScratch/TryCompile-sl9WUL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.6"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles/CMakeScratch/TryCompile-sl9WUL'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_beaba/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_beaba.dir/build.make CMakeFiles/cmTC_beaba.dir/build
+        Building C object CMakeFiles/cmTC_beaba.dir/OpenMPCheckVersion.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -Xpreprocessor -fopenmp -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -MD -MT CMakeFiles/cmTC_beaba.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_beaba.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_beaba.dir/OpenMPCheckVersion.c.o -c "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles/CMakeScratch/TryCompile-sl9WUL/OpenMPCheckVersion.c"
+        /Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles/CMakeScratch/TryCompile-sl9WUL/OpenMPCheckVersion.c:3:10: fatal error: 'omp.h' file not found
+        #include <omp.h>
+                 ^~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_beaba.dir/OpenMPCheckVersion.c.o] Error 1
+        make: *** [cmTC_beaba/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:33 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles/CMakeScratch/TryCompile-bpayh2"
+      binary: "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles/CMakeScratch/TryCompile-bpayh2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.6"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles/CMakeScratch/TryCompile-bpayh2'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f548e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f548e.dir/build.make CMakeFiles/cmTC_f548e.dir/build
+        Building CXX object CMakeFiles/cmTC_f548e.dir/OpenMPCheckVersion.cpp.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Wall -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -Xpreprocessor -fopenmp -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -MD -MT CMakeFiles/cmTC_f548e.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_f548e.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_f548e.dir/OpenMPCheckVersion.cpp.o -c "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles/CMakeScratch/TryCompile-bpayh2/OpenMPCheckVersion.cpp"
+        Linking CXX executable cmTC_f548e
+        /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f548e.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wall -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -Xpreprocessor -fopenmp -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f548e.dir/OpenMPCheckVersion.cpp.o -o cmTC_f548e 
+        
+      exitCode: 0
+...

@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build_test")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

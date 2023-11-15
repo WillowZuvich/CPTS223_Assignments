@@ -1,0 +1,3 @@
+/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles/CPTS_223_MA4.dir
+/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles/edit_cache.dir
+/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles/rebuild_cache.dir

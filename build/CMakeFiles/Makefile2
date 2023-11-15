@@ -57,7 +57,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build_test"
+CMAKE_BINARY_DIR = "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/CPTS_223_MA4.dir/clean
 CMakeFiles/CPTS_223_MA4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPTS_223_MA4.dir/build.make CMakeFiles/CPTS_223_MA4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPTS_223_MA4.dir/build.make CMakeFiles/CPTS_223_MA4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build_test/CMakeFiles" --progress-num=1,2 "Built target CPTS_223_MA4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles" --progress-num=1,2 "Built target CPTS_223_MA4"
 .PHONY : CMakeFiles/CPTS_223_MA4.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CPTS_223_MA4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build_test/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CPTS_223_MA4.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build_test/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/willowzuvich/desktop/CPTS 223/CPTS223_Assignments/build/CMakeFiles" 0
 .PHONY : CMakeFiles/CPTS_223_MA4.dir/rule
 
 # Convenience name for target.
